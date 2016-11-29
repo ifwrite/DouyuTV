@@ -13,7 +13,7 @@ class EMHomeVC: EMBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupNavigationBar()
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,11 +21,24 @@ class EMHomeVC: EMBaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-    private func setupNavigationBar() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "logo"), style: .plain, target: self, action: #selector(leftAction))
+}
+
+extension EMHomeVC {
+    
+    fileprivate func setupUI() {
+        
+        setupNavigationBar()
     }
     
-    func leftAction() {
+    private func setupNavigationBar() {
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
+        
+        let size = CGSize(width: 40, height: 40)
+        let historyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size)
+        let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
+        let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
 
+        navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
     }
 }

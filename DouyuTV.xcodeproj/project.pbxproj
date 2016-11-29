@@ -19,6 +19,8 @@
 		2DBBE4731DEC775000E3A931 /* EMMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBBE4721DEC775000E3A931 /* EMMineVC.swift */; };
 		2DBBE4771DEC798000E3A931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBBE4761DEC798000E3A931 /* Main.storyboard */; };
 		2DBBE47B1DEC7A4800E3A931 /* EMBaseNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBBE47A1DEC7A4800E3A931 /* EMBaseNV.swift */; };
+		2DE5379F1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */; };
+		2DE537A11DEDC7AA005B8D11 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE537A01DEDC7AA005B8D11 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		2DBBE4721DEC775000E3A931 /* EMMineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMMineVC.swift; sourceTree = "<group>"; };
 		2DBBE4761DEC798000E3A931 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2DBBE47A1DEC7A4800E3A931 /* EMBaseNV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMBaseNV.swift; sourceTree = "<group>"; };
+		2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		2DE537A01DEDC7AA005B8D11 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		2D1FF22A1DEC7245001E5608 /* DouyuTV */ = {
 			isa = PBXGroup;
 			children = (
+				2DE5379C1DEDAB74005B8D11 /* Tool */,
 				2D1FF2401DEC72AF001E5608 /* Main */,
 				2D1FF2431DEC73E6001E5608 /* Base */,
 				2D1FF23E1DEC72AF001E5608 /* Home */,
@@ -139,6 +144,23 @@
 				2DBBE47A1DEC7A4800E3A931 /* EMBaseNV.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2DE5379C1DEDAB74005B8D11 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2DE5379D1DEDAB74005B8D11 /* Extension */,
+				2DE537A01DEDC7AA005B8D11 /* Common.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		2DE5379D1DEDAB74005B8D11 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE5379F1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift in Sources */,
 				2DBBE4711DEC774300E3A931 /* EMFollowVC.swift in Sources */,
 				2DBBE46B1DEC772100E3A931 /* EMHomeVC.swift in Sources */,
 				2DBBE4731DEC775000E3A931 /* EMMineVC.swift in Sources */,
+				2DE537A11DEDC7AA005B8D11 /* Common.swift in Sources */,
 				2D1FF22C1DEC7245001E5608 /* AppDelegate.swift in Sources */,
 				2D1FF24B1DEC746E001E5608 /* EMBaseTabBarController.swift in Sources */,
 				2DBBE46D1DEC772F00E3A931 /* EMLiveVC.swift in Sources */,
