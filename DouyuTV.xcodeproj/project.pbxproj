@@ -19,6 +19,13 @@
 		2DBBE4731DEC775000E3A931 /* EMMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBBE4721DEC775000E3A931 /* EMMineVC.swift */; };
 		2DBBE4771DEC798000E3A931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBBE4761DEC798000E3A931 /* Main.storyboard */; };
 		2DBBE47B1DEC7A4800E3A931 /* EMBaseNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBBE47A1DEC7A4800E3A931 /* EMBaseNV.swift */; };
+		2DE249FB1DF41C520099DAD2 /* EMPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE249FA1DF41C520099DAD2 /* EMPageTitleView.swift */; };
+		2DE249FD1DF424480099DAD2 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE249FC1DF424480099DAD2 /* UIColor-Extension.swift */; };
+		2DE249FF1DF429820099DAD2 /* EMPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE249FE1DF429820099DAD2 /* EMPageContentView.swift */; };
+		2DE24A011DF434450099DAD2 /* EMRecommandVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE24A001DF434450099DAD2 /* EMRecommandVC.swift */; };
+		2DE24A031DF434530099DAD2 /* EMGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE24A021DF434530099DAD2 /* EMGameVC.swift */; };
+		2DE24A051DF434640099DAD2 /* EMAmuseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE24A041DF434640099DAD2 /* EMAmuseVC.swift */; };
+		2DE24A071DF4346F0099DAD2 /* EMFunnyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE24A061DF4346F0099DAD2 /* EMFunnyVC.swift */; };
 		2DE5379F1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */; };
 		2DE537A11DEDC7AA005B8D11 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE537A01DEDC7AA005B8D11 /* Common.swift */; };
 /* End PBXBuildFile section */
@@ -38,8 +45,15 @@
 		2DBBE4721DEC775000E3A931 /* EMMineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMMineVC.swift; sourceTree = "<group>"; };
 		2DBBE4761DEC798000E3A931 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2DBBE47A1DEC7A4800E3A931 /* EMBaseNV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMBaseNV.swift; sourceTree = "<group>"; };
+		2DE249FA1DF41C520099DAD2 /* EMPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMPageTitleView.swift; sourceTree = "<group>"; };
+		2DE249FC1DF424480099DAD2 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		2DE249FE1DF429820099DAD2 /* EMPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMPageContentView.swift; sourceTree = "<group>"; };
+		2DE24A001DF434450099DAD2 /* EMRecommandVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMRecommandVC.swift; sourceTree = "<group>"; };
+		2DE24A021DF434530099DAD2 /* EMGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMGameVC.swift; sourceTree = "<group>"; };
+		2DE24A041DF434640099DAD2 /* EMAmuseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMAmuseVC.swift; sourceTree = "<group>"; };
+		2DE24A061DF4346F0099DAD2 /* EMFunnyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMFunnyVC.swift; sourceTree = "<group>"; };
 		2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
-		2DE537A01DEDC7AA005B8D11 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		2DE537A01DEDC7AA005B8D11 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				2DBBE46A1DEC772100E3A931 /* EMHomeVC.swift */,
+				2DE24A001DF434450099DAD2 /* EMRecommandVC.swift */,
+				2DE24A021DF434530099DAD2 /* EMGameVC.swift */,
+				2DE24A041DF434640099DAD2 /* EMAmuseVC.swift */,
+				2DE24A061DF4346F0099DAD2 /* EMFunnyVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -114,6 +132,9 @@
 		2D1FF2401DEC72AF001E5608 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2DE249F71DF41C390099DAD2 /* Controller */,
+				2DE249F81DF41C390099DAD2 /* Model */,
+				2DE249F91DF41C390099DAD2 /* View */,
 				2D1FF2341DEC7245001E5608 /* LaunchScreen.storyboard */,
 				2DBBE4761DEC798000E3A931 /* Main.storyboard */,
 			);
@@ -146,11 +167,33 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		2DE249F71DF41C390099DAD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DE249F81DF41C390099DAD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DE249F91DF41C390099DAD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DE249FA1DF41C520099DAD2 /* EMPageTitleView.swift */,
+				2DE249FE1DF429820099DAD2 /* EMPageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2DE5379C1DEDAB74005B8D11 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
 				2DE5379D1DEDAB74005B8D11 /* Extension */,
-				2DE537A01DEDC7AA005B8D11 /* Common.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -158,7 +201,9 @@
 		2DE5379D1DEDAB74005B8D11 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2DE537A01DEDC7AA005B8D11 /* Common.swift */,
 				2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */,
+				2DE249FC1DF424480099DAD2 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -240,13 +285,20 @@
 				2DBBE4711DEC774300E3A931 /* EMFollowVC.swift in Sources */,
 				2DBBE46B1DEC772100E3A931 /* EMHomeVC.swift in Sources */,
 				2DBBE4731DEC775000E3A931 /* EMMineVC.swift in Sources */,
+				2DE249FB1DF41C520099DAD2 /* EMPageTitleView.swift in Sources */,
 				2DE537A11DEDC7AA005B8D11 /* Common.swift in Sources */,
 				2D1FF22C1DEC7245001E5608 /* AppDelegate.swift in Sources */,
+				2DE24A051DF434640099DAD2 /* EMAmuseVC.swift in Sources */,
 				2D1FF24B1DEC746E001E5608 /* EMBaseTabBarController.swift in Sources */,
+				2DE249FD1DF424480099DAD2 /* UIColor-Extension.swift in Sources */,
 				2DBBE46D1DEC772F00E3A931 /* EMLiveVC.swift in Sources */,
 				2DBBE47B1DEC7A4800E3A931 /* EMBaseNV.swift in Sources */,
 				2D1FF24D1DEC74E8001E5608 /* EMBaseVC.swift in Sources */,
+				2DE24A011DF434450099DAD2 /* EMRecommandVC.swift in Sources */,
 				2DBBE46F1DEC773900E3A931 /* EMVideoVC.swift in Sources */,
+				2DE24A031DF434530099DAD2 /* EMGameVC.swift in Sources */,
+				2DE249FF1DF429820099DAD2 /* EMPageContentView.swift in Sources */,
+				2DE24A071DF4346F0099DAD2 /* EMFunnyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
