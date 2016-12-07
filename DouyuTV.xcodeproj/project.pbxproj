@@ -28,9 +28,11 @@
 		2DE24A071DF4346F0099DAD2 /* EMFunnyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE24A061DF4346F0099DAD2 /* EMFunnyVC.swift */; };
 		2DE5379F1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */; };
 		2DE537A11DEDC7AA005B8D11 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE537A01DEDC7AA005B8D11 /* Common.swift */; };
+		A979C135F4EAA1569DBB01D0 /* Pods_DouyuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1194042452E692353BCE33 /* Pods_DouyuTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1194042452E692353BCE33 /* Pods_DouyuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouyuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1FF2281DEC7245001E5608 /* DouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1FF22B1DEC7245001E5608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1FF2321DEC7245001E5608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		2DE24A061DF4346F0099DAD2 /* EMFunnyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMFunnyVC.swift; sourceTree = "<group>"; };
 		2DE5379E1DEDAB97005B8D11 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		2DE537A01DEDC7AA005B8D11 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../Common.swift; sourceTree = "<group>"; };
+		7B0E28254D9D1E542ADA7A8E /* Pods-DouyuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuTV/Pods-DouyuTV.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB0564D72757430EB6A32C2 /* Pods-DouyuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuTV/Pods-DouyuTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A979C135F4EAA1569DBB01D0 /* Pods_DouyuTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0125ABE6A11B05D33115FD47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B0E28254D9D1E542ADA7A8E /* Pods-DouyuTV.debug.xcconfig */,
+				CAB0564D72757430EB6A32C2 /* Pods-DouyuTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C39AE8B8337E475878E199C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A1194042452E692353BCE33 /* Pods_DouyuTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D1FF21F1DEC7245001E5608 = {
 			isa = PBXGroup;
 			children = (
 				2D1FF22A1DEC7245001E5608 /* DouyuTV */,
 				2D1FF2291DEC7245001E5608 /* Products */,
+				0125ABE6A11B05D33115FD47 /* Pods */,
+				1C39AE8B8337E475878E199C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,8 +159,8 @@
 				2DE249F71DF41C390099DAD2 /* Controller */,
 				2DE249F81DF41C390099DAD2 /* Model */,
 				2DE249F91DF41C390099DAD2 /* View */,
-				2D1FF2341DEC7245001E5608 /* LaunchScreen.storyboard */,
 				2DBBE4761DEC798000E3A931 /* Main.storyboard */,
+				2D1FF2341DEC7245001E5608 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -215,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1FF23A1DEC7245001E5608 /* Build configuration list for PBXNativeTarget "DouyuTV" */;
 			buildPhases = (
+				943749096F8880AE4B8BE4BD /* [CP] Check Pods Manifest.lock */,
 				2D1FF2241DEC7245001E5608 /* Sources */,
 				2D1FF2251DEC7245001E5608 /* Frameworks */,
 				2D1FF2261DEC7245001E5608 /* Resources */,
+				FF85D8A1166F5D775AE9277F /* [CP] Embed Pods Frameworks */,
+				96E2FD2905DE6CE89363B1DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +302,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		943749096F8880AE4B8BE4BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96E2FD2905DE6CE89363B1DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyuTV/Pods-DouyuTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF85D8A1166F5D775AE9277F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyuTV/Pods-DouyuTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D1FF2241DEC7245001E5608 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		2D1FF23B1DEC7245001E5608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0E28254D9D1E542ADA7A8E /* Pods-DouyuTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -424,6 +500,7 @@
 		};
 		2D1FF23C1DEC7245001E5608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB0564D72757430EB6A32C2 /* Pods-DouyuTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
