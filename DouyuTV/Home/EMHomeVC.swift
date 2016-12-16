@@ -13,14 +13,14 @@ private let kTitleViewH : CGFloat = 40
 class EMHomeVC: EMBaseVC {
 
     // MARK:- 懒加载
-    fileprivate lazy var pageTitleView: EMPageTitleView = {
+    fileprivate lazy var pageTitleView: EMPageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = EMPageTitleView(frame: frame, titles: titles)
         titleView.delegate = self
         return titleView
     }()
-    fileprivate lazy var pageContentView: EMPageContentView = {
+    fileprivate lazy var pageContentView: EMPageContentView = {[weak self] in
         let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
 
@@ -30,7 +30,7 @@ class EMHomeVC: EMBaseVC {
         childVCs.append(EMAmuseVC())
         childVCs.append(EMFunnyVC())
         
-        let contentView = EMPageContentView(frame: contentFrame, childVCs: childVCs, parentViewController: self)
+        let contentView = EMPageContentView(frame: contentFrame, childVCs: childVCs, parentViewController: self!)
         contentView.delegate = self
         return contentView
     }()
